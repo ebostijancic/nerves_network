@@ -70,6 +70,8 @@ defmodule Nerves.Network.Udhcpc do
       "--script",
       port_path,
       "--foreground",
+      "-T",
+      "30",
       "-x",
       "hostname:#{hostname()}"
     ]
